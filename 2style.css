@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://cdn.pixabay.com/photo/2013/10/29/18/20/flower-202483_1280.jpg);
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    border: 1px solid rgb(241,241,241);
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.container h2{
+    font-size: 30px;
+    color: #fff;
+}
+.input-box{
+    position: relative;
+}
+.input-box input[type="text"],
+.input-box input[type="password"]{
+    border-radius: 10px;
+    background: transparent;
+    margin: 15px;
+    border: 2px solid hsl(0, 0%, 100%);
+    width: 280px;
+    height: 20px;
+    padding: 5px 5px 5px 5px;
+    backdrop-filter: blur(15px);
+}
+.input-box i{
+    position: absolute;
+    top: 50px;
+    transform: translateY(-50px);
+    right: 10px;
+    color: rgb(255,255,255);
+}
+input::placeholder{
+    color: rgb(255,255,255);
+}
+a.forget-pass{
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+}
+a.forget:hover{
+    text-decoration: underline;
+    color: #fff;
+
+}
+a.sign-up{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+a.sign-up:hover{
+    text-decoration: underline;
+    color:#fff;
+}
+.container .login-box{
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 45px;
+    width: 280px;
+    height: 30px;
+}
