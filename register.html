@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+    
+            body {
+                background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20231114/pngtree-let-your-senses-be-guided-by-the-whispers-of-nature-s-image_14006720.jpg);
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+    
+            .content-register {
+                width: 350px;
+                padding: 20px;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 10px;
+                box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+    
+            h1 {
+                color: #333;
+                margin-bottom: 20px;
+            }
+    
+            .content-register input[type="text"],
+            .content-register input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: none;
+                border-radius: 20px;
+                font-size: 14px;
+                background-color: #f3f3f3;
+            }
+    
+            .content-register input[type="text"]:focus,
+            .content-register input[type="password"]:focus {
+                outline: none;
+                border: 1px solid #6a5acd;
+                background-color: #fff;
+            }
+    
+            .register-box {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 15px;
+            }
+    
+            .register-box a button {
+                width: 100%;
+                padding: 10px;
+                border-radius: 20px;
+                border: none;
+                background-color: #4c4cff;
+                color: #fff;
+                font-size: 14px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+    
+            .register-box a button:hover {
+                background-color: #3333cc;
+            }
+    
+            .options-check {
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                font-size: 12px;
+                color: #333;
+            }
+    
+            .options-check input[type="checkbox"] {
+                margin-right: 8px;
+            }
+    
+            .options-check label {
+                color: #333;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div class="content-register">
+            <h1>Register</h1>
+            <input type="text" id="username" name="username"
+                placeholder="Enter your name" required>
+            <input type="text" id="email" name="email"
+                placeholder="Enter your email" required>
+            <input type="text" id="password" name="password"
+                placeholder="Create a password" required>
+            <input type="text" id="confirm-password" name="confirm-password"
+                placeholder="Confirm a password" required>
+
+            <div class="register-box">
+                <a href="#"><button type="button">Login with
+                        Facebook</button></a>
+                <a href="#"><button type="button">Login with Line</button></a>
+                <a href="#"><button type="button">Login with Gmail</button></a>
+            </div>
+            <div class="options-check">
+                <input type="checkbox" id="accept" name="accept">
+                <label for="accept">I accept all terms & conditions</label>
+            </div>
+        </div>
+    </body>
+</html>
